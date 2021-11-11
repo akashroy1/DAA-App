@@ -9,7 +9,7 @@ def home():
         courseId = request.form.get("code")
         result1 = pattern_matching.find(courseId)
     except:
-        result1 = 'Enter Course Code to search Course Details'
+        result1 = ["NA", "NA", "NA", "NA"]
     
     # courseId =  'CSE2005'
     # result1 = pattern_matching.find(courseId)
